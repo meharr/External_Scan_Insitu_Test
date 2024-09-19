@@ -212,7 +212,7 @@ std::vector<float64> ExternalScan::generateScanData() const {
 		}
 	}
 	std::cout << "scan voltage range: " << xData.front() << " volts to " << xData.back() << " volts \n";
-	// std::reverse(yData.begin(), yData.end());	// y should be reversed to get positive image for FEI Teneo. But not necessary for Tescan
+	std::reverse(yData.begin(), yData.end());	// y should be reversed to get positive image for FEI Teneo. But not necessary for Tescan
 
 	//generate single pass scan, double the data if we always use snake.  If use raster, do not double.
 	std::vector<float64> scan;

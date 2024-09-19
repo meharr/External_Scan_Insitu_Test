@@ -45,24 +45,24 @@ int main(int argc, char *argv[]) {
 		std::string yPath = "dev2/ao1";
 		std::string ePath = "dev2/ai2";
 		std::string output = "d:/testImage/test_image.tiff";
-		float64 scanVoltageH = 4.65;	//horizontal voltage
-		float64 scanVoltageV = 4.65;	//vertical voltage
-		uInt64 dwellSamples = 4;
+		float64 scanVoltageH = 3.86;	//horizontal voltage
+		float64 scanVoltageV = 3.9;	//vertical voltage
+		uInt64 dwellSamples = 2;
 		float64 delayRatio = 0.04;	// addtional ratio of time to spend at beginning of line scan (mainly useful for raster)
 
 		bool raster = true;
 		bool snake = !raster;
 
 		std::string timeLog = "d:/testImage/timgLog.txt";
-		uInt64 width = 1024;
-		uInt64 height = 1024;
+		uInt64 width = 2048;
+		uInt64 height = 2048;
 
-		float64 vBlack = 0;			//voltage for black
-		float64 vWhite = 1;			//voltage for whilte
+		float64 vBlack = -1.25;			//voltage for black
+		float64 vWhite = 1.75;			//voltage for whilte
 		bool saveAverageOnly = true;	//whether to save averaged figure ony
 		bool correctTF = true;
-		uInt64 nFrames = 1;				// frame integration.
-		uInt64 nLines = 1;				// line integration.
+		uInt64 nFrames = 4;				// frame integration.
+		uInt64 nLines = 2;				// line integration.
 		float64 maxShift = 20.0;		//maximum pixel shift to correct
 		// uInt64 autoLoop = 0;			//whether use this code to do an auto image test with iFast
 		// std::string output_raw;			// records the raw output name
