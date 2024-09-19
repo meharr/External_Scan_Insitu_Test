@@ -36,7 +36,7 @@
 
 #include "ExternalScan.h"
 
-static const float64 maxVoltage = 5.0; //hard coded limit on voltage amplitude to protect scan coils. For Tescan, this is 5.0. Use 4.6 to get same field of view as shown in UI.
+static const float64 maxVoltage = 4.0; //hard coded limit on voltage amplitude to protect scan coils. For Tescan, this is 5.0. Use 4.6 to get same field of view as shown in UI.
 
 int main(int argc, char *argv[]) {
 	try {
